@@ -1,0 +1,146 @@
+/* fonts Import from google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* roots */
+
+:root {
+    --primary-color: #f13033;
+    --primary-color-dark: #c3282b;
+    --secondary-color: #f9f9f9;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans;
+}
+
+a{
+    text-decoration: none;
+}
+
+html, body{
+scroll-behavior: smooth;      
+}
+
+.header{
+    background-image: url("img/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    nav{
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav_logo a{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--white);
+    }
+
+    .nav_links{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .nav_links a{
+        padding: 5px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--white);
+    }
+
+    .nav_links a:hover{
+        color: var(--primary-color);
+    }
+.section_container{
+    max-width: var(--max-width);
+    padding: 5rem 1rem;
+    margin: auto;
+}
+
+.header_container{
+    padding: 5rem 1rem 10rem;
+}
+
+.header_container h1{
+    margin-bottom: 4rem;
+    max-width: 1000px;
+    margin-inline:auto;
+    font-size: 3.5rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.header_form{
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.header_form form{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    border-radius: 10px;
+
+}
+
+.input_group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input_group label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.input_group input{
+    max-width: 140px;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.btn{
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: var(--primary-color-dark);
+}
