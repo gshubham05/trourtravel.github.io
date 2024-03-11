@@ -1,53 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TourTravel</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <nav>
-            <div class="nav_logo">
-                <a href="">TourTravel</a>
-            </div>
-            <ul class="nav_links">
-                <li class="links"><a href="#">Home</a></li>
-                <li class="links"><a href="#">About Us</a></li>
-                <li class="links"><a href="#">Packages</a></li>
-                <li class="links"><a href="#">Trending</a></li>
-                <li class="links"><a href="#">Contact us</a></li>
-            </ul>
-        </nav>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-        <div class="section_container header_container">
-            <h1>Exploring World with Us !</h1>
-            <div class="header_form">
-                <form action="/">
-                    <div class="input_group">
-                        <label for="Destination">Where You Want To Go ?</label>
-                        <input type="text" placeholder="Zip Code / Country Code">
-                    </div>
-                    <div class="input_group">
-                        <label for="CheckIn">Check In</label>
-                        <input type="text" placeholder="Check IN">
-                    </div>
-                    <div class="input_group">
-                        <label for="Check Out">Check Out</label>
-                        <input type="text" placeholder="Check Out">
-                    </div>
-                    <div class="input_group">
-                        <label for="Guests">How Many You Are ?</label>
-                        <input type="text" placeholder="Mention Guests">
-                    </div>
-                    <button class="btn">Check Availability</button>
-                </form>
-            </div>
+    <!-- ICONS REMIXON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav_logo">
+          <a href="">TourTravel</a>
         </div>
+        <ul class="nav_links">
+          <li class="links"><a href="#">Home</a></li>
+          <li class="links"><a href="#">About Us</a></li>
+          <li class="links"><a href="#">Packages</a></li>
+          <li class="links"><a href="#">Trending</a></li>
+          <li class="links"><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div class="section_container header_container">
+        <h1>Exploring World with Us !</h1>
+        <div class="header_form">
+          <form action="/">
+            <div class="input_group">
+              <label for="Destination">Where You Want To Go ?</label>
+              <input type="text" placeholder="Zip Code / Country Code" />
+            </div>
+            <div class="input_group">
+              <label for="CheckIn">Check In</label>
+              <input type="text" placeholder="Check IN" />
+            </div>
+            <div class="input_group">
+              <label for="Check Out">Check Out</label>
+              <input type="text" placeholder="Check Out" />
+            </div>
+            <div class="input_group">
+              <label for="Guests">How Many Are you ?</label>
+              <input type="text" placeholder="Mention Guests" />
+            </div>
+            <button class="btn">Check Availability</button>
+          </form>
+        </div>
+      </div>
     </header>
-</body>
+
+    <div class="section_header">
+      <div class="header_title">
+        <h2 class="title">Trending</h2>
+        <div class="section_nav">
+          <span><i class="ri-arrow-right-s-line"></i></span>
+          <span><i class="ri-arrow-left-s-line"></i></span>
+        </div>
+      </div>
+
+      <style>
+        .trending_grid {
+          margin-top:2rem;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          gap: 2rem;
+        }
+        .trending_card{
+          padding: 1rem;
+          box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+          border-radius: 10px;
+
+        }
+        .trending_card img{
+          /* height: 368px;
+          width: 526px; */
+          /* padding: 1rem; */
+          margin-bottom: 2rem;
+          display: flex;
+          width: 100%;
+          border-radius: 10px;
+        }
+
+        .details{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin: 2rem 0;
+        }
+
+        span{
+          color: goldenrod;
+        }
+
+        p{
+          font-size: .9rem;
+        }
+        h3{
+          font-size: 1.5rem;
+        }
+
+       .ratings p{
+          text-align: right;
+        }
+
+        h1{
+          font-size: 1.5rem;
+        }
+      </style>
+
+      <!-- trending Grid Start -->
+      <div class="trending_grid">
+        <div class="trending_card">
+          <img src="img/trending-1.jpg" alt="" />
+          <h1>Mountain Hiking Tour</h1>
+          <p>Hiking Our | Stoke On Trent</p>
+          <div class="details">
+            <div class="price">
+              <p>from</p>
+              <h3>957</h3>
+              <p>price may varies</p>
+            </div>
+            <div class="ratings">
+              <div class="">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
+              <p id="right">4.8 (10)</p>
+            </div>
+          </div>
+        </div>
+        <div class="trending_card">
+            <img src="img/trending-2.jpg" alt="" />
+            <h1>Mountain Hiking Tour</h1>
+            <p>Hiking Our | Stoke On Trent</p>
+            <div class="details">
+              <div class="price">
+                <p>from</p>
+                <h3>957</h3>
+                <p>price may varies</p>
+              </div>
+              <div class="ratings">
+                <div class="">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>4.8 (10)</p>
+              </div>
+            </div>
+          </div>
+          <div class="trending_card">
+            <img src="img/trending-3.jpg" alt="" />
+            <h1>Mountain Hiking Tour</h1>
+            <p>Hiking Our | Stoke On Trent</p>
+            <div class="details">
+              <div class="price">
+                <p>from</p>
+                <h3>957</h3>
+                <p>price may varies</p>
+              </div>
+              <div class="ratings">
+                <div class="">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>4.8 (10)</p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <!-- trending Grid End -->
+    </div>
+  </body>
 </html>
